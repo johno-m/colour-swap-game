@@ -2,8 +2,12 @@
     <div id="new-game-screen" class="row main-window">
         <div class="instructions-panel col">
             <div class="row">
-                <video src="http://www.johnomckay.co.uk/example.m4v" preload="true"
-                    loop muted autoplay></video>
+                <div class="video-wrapper">
+                    <video 
+                        alt="Video example of game" 
+                        src="../assets/example.mp4" 
+                        muted autoplay loop />
+                </div>
                 <div class="col">
                     <h2>Instructions</h2>
                     <p>
@@ -44,11 +48,13 @@ export default {
 }
 video {
     width: 450px;
+    
 }
 
-section {
-
+.col {
+    margin-left: 40px;
 }
+
 #new-game-screen button:hover {
     box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.2);
 }
